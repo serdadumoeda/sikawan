@@ -26,4 +26,8 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
-Route::resource('/admin-tanya','PertanyaanController');
+Route::resource('/tanya','PertanyaanController');
+Route::resource('/jawab','JawabController');
+Route::resource('/respon','ResponController');
+Route::resource('/responden','RespondenController');
+Route::resource('/survey','SurveyController');
